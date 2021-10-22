@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+   <html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Julia Zharykova</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+
+   <body>
+
+      <svg style="display: none;">
+
+         <symbol id="facebook" viewBox="0 0 24 24">
+            <g>
+               <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/>
+            </g>
+         </symbol>
+         <symbol id="vk" viewBox="0 0 24 24">
+            <g>
+               <path d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z"/>
+            </g>
+         </symbol>
+         <symbol id="instagram" viewBox="0 0 511 511.9">
+            <g>
+               <path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/>
+            </g>
+         </symbol>
+         <symbol id="telegram" viewBox="0 0 24 24">
+            <g>
+               <path d="M9.78,18.65L10.06,14.42L17.74,7.5C18.08,7.19 17.67,7.04 17.22,7.31L7.74,13.3L3.64,12C2.76,11.75 2.75,11.14 3.84,10.7L19.81,4.54C20.54,4.21 21.24,4.72 20.96,5.84L18.24,18.65C18.05,19.56 17.5,19.78 16.74,19.36L12.6,16.3L10.61,18.23C10.38,18.46 10.19,18.65 9.78,18.65Z" />
+            </g>
+         </symbol>
+
+      </svg>
+
+
+   <div class="wrapper">
+
+      <!-- button-up -->
+
+      <div class="button-up" id="button-up">
+         <img src="img/header/up-chevron.svg" height="20px" alt="">
+      </div>
+
+      <!-- header -->
+
+      <header class="header" id="header">
+         <div class="header__inner container">
+            <div class="header__logo">
+               <a href="index.html"><img src="img/header/logo.svg" alt="logo"></a>
+            </div>
+            <nav class="header-nav">
+               <ul class="header-nav__list">
+                  <li class="header-nav__item">
+                     <a href="index.html#intro" class="header-nav__link">Главная</a>
+                  </li>
+                  <li class="header-nav__item">
+                     <a href="index.html#about" class="header-nav__link">Обо мне</a>
+                  </li>
+                  <li class="header-nav__item">
+                     <a href="index.html#services" class="header-nav__link">Услуги</a>
+                        <span class="menu-arrow">
+                           <img src="img/header/down-chevron.svg" alt="arrow">
+                        </span>
+                        <ul class="header-nav__sublist">
+                           <li class="header-nav__subitem">
+                              <a href="parsing.html" class="header-nav__sublink">Разбор гардероба</a>
+                           </li>
+                           <li class="header-nav__subitem">
+                              <a href="shopping.html" class="header-nav__sublink">Шопинг- сопровождение</a>
+                           </li>
+                           <li class="header-nav__subitem">
+                              <a href="photosession.html" class="header-nav__sublink">Стилизация съемок</a>
+                           </li>
+                           <li class="header-nav__subitem">
+                              <a href="magic-of-style.html" class="header-nav__sublink">«Магия стиля»</a>
+                           </li>
+                        </ul>
+                  </li>
+                  <li class="header-nav__item">
+                     <a href="index.html#portfolio" class="header-nav__link">Портфолио</a>
+                  </li>
+                  <li class="header-nav__item">
+                     <a href="index.html#contacts" class="header-nav__link">Контакты</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="header-burger">
+               <span></span>
+            </div>
+         </div>
+      </header>
+
+      <!-- main -->
+
+      <main class="main">
+         <section class="intro-section" id="intro">
+            <div class="intro">
+               <div class="intro-content">
+                  <h3 class="intro__subtitle">Здравствуйте!</h3>
+                  <h1 class="intro__title">Я - Юлия Жарикова</h1>
+                  <p class="intro__stylist">Fashion-стилист, <span class="typing">имиджмейкер</span></p>
+               </div>
+
+               <div class="intro__social">
+                  <div class="intro__social-item intro__social-item--facebook">
+                     <a href="https://www.facebook.com/people/%D0%AE%D0%BB%D0%B8%D1%8F-%D0%96%D0%B0%D1%80%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0/100005749932021/">
+                        <svg class="intro__social-icon">
+                           <use xlink:href="#facebook"></use>
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="intro__social-item intro__social-item--vk">
+                     <a href="https://vk.com/id242389222">
+                        <svg class="intro__social-icon">
+                           <use xlink:href="#vk"></use>
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="intro__social-item intro__social-item--instagram">
+                     <a href="https://www.instagram.com/juliazharykova/">
+                        <svg class="intro__social-icon">
+                           <use xlink:href="#instagram"></use>
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="intro__social-item intro__social-item--telegram">
+                     <a href="https://t.me/julia_styling">
+                        <svg class="intro__social-icon">
+                           <use xlink:href="#telegram"></use>
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="about-section" id="about">
+            <div class="container">
+               <div class="about ">
+                  <div class="about__column about__column--1">
+                     <div class="about__image">
+                        <img src="img/about/image.jpg" alt="">
+                     </div>
+                  </div>
+                  <div class="about__column about__column--2">
+                     <div class="about__content">
+                        <h2 class="about__title">Юлия Жарикова</h2>
+                        <h3 class="about__subtitle">Стилист. Модель. Fashion & Personal styling.</h3>
+                        <p class="about__text">Я практикующий fashion-стилист с европейским образованием, единственный в городе. Использую креативный подход и психологический портрет клиента для создания его уникального стиля. По первому образованию я медработник, есть большой опыт работы в этой сфере.</p>
+                        <p class="about__text">Очень люблю моду и рада быть полезной, чтобы помочь Вам найти свое понимание себя с помощью одежды.</p>
+                        <p class="about__text">Участвовала во многих проектах по преображению женщин в нашем городе, а также в одном из проектов в Итальянской школе. Автор статей в журнал от Итальянской школы (онлайн-версия).</p>
+                        <p class="about__text">Посещаю различные культурные мероприятия в модной среде: показы мод, мастер-классы у популярных блогеров, связанных с модой, провела несколько fashion-съемок.</p>
+                        <p class="about__text">Разбираюсь в люксовых марках и миксую с более доступными.</p>
+                        <p class="about__text about__text--accent">Осознанное потребление, эстетика, гармония с собой и окружающим миром - мое кредо в работе!</p>
+                        <div class="about__button">
+                           <a href="" class="btn btn--about">Связаться</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="services-section" id="services">
+            <div class="container">
+               <div class="services">
+                  <h2 class="services__title title">Мои услуги</h2>
+                  <p class="services__text">Я тактичный и внимательный человек. Очень хорошо понимаю, что все люди разные, у всех разные жизненные ценности и задачи, разный уровень материального достатка и свое уникальное видение прекрасного. Поэтому я никогда не спорю и не навязываю свою точку зрения. Если предложенные мною варианты Вам не понравятся, мы найдем другие. Я свободна от дутых амбиций "великого стилиста" и высокомерия по отношению к людям вообще и своим клиентам в частности. Со мною комфортно.</p>
+                  <div class="services__cards cards">
+                     <div class="cards__item">
+                        <div class="cards__icon">
+                           <img src="img/services/parsing.jpg" alt="">
+                        </div>
+                        <h4 class="cards__title">Разбор гардероба</h4>
+                        <ul class="cards__list">
+                           <li class="cards__list-item">
+                              Разбор вещей по сезонам у вас дома.
+                           </li>
+                           <li class="cards__list-item">
+                              Составление комплектов из имеющихся вещей.
+                           </li>
+                           <li class="cards__list-item">
+                              Шоп-лист вещей, которые рекомендовано докупить.
+                           </li>
+                        </ul>
+                        <p class="cards__price">Стоимость: <span>220 BYN / 90 $</span></p>
+                        <p class="cards__duration">Продолжительность: <span>4 часа.</span></p>
+                        <div class="cards__button">
+                           <a href="parsing.html" class="btn cards__btn">Подробнее</a>
+                        </div>
+                     </div>
+                     <div class="cards__item">
+                        <div class="cards__icon">
+                           <img src="img/services/photosession.jpg" alt="">
+                        </div>
+                        <h4 class="cards__title">Стилизация съемок</h4>
+                        <ul class="cards__list">
+                           <li class="cards__list-item">
+                              Подбор стильных образов, исходя из Ваших пожеланий.
+                           </li>
+                           <li class="cards__list-item">
+                           Помощь с выбором причёски, макияжа, подходящих под образ.
+                           </li>
+                           <li class="cards__list-item">
+                              Ссылки на магазины, интересные детали.
+                           </li>
+                        </ul>
+                        <p class="cards__price">Стоимость: <span>50 BYN за образ / 20 $</span></p>
+                        <p class="cards__duration">Продолжительность: <span>более 1 часа.</span></p>
+                        <div class="cards__button">
+                           <a href="photosession.html" class="btn cards__btn">Подробнее</a>
+                        </div>
+                     </div>
+                     <div class="cards__item">
+                        <div class="cards__icon">
+                           <img src="img/services/shopping.jpg" alt="">
+                        </div>
+                        <h4 class="cards__title">Шопинг- сопровождение</h4>
+                        <ul class="cards__list">
+                           <li class="cards__list-item">
+                              Обсуждение ваших желаний и потребностей.
+                           </li>
+                           <li class="cards__list-item">
+                              Встреча в выбранном ТЦ и следование шопинг-маршруту.
+                           </li>
+                           <li class="cards__list-item">
+                              Выбор и примерка вещей, покупка.
+                           </li>
+                           <li class="cards__list-item">
+                              Отдых, кофе-пауза и беседа.
+                           </li>
+                        </ul>
+                        <p class="cards__price">Стоимость: <span>220 BYN / 90 $</span></p>
+                        <p class="cards__duration">Продолжительность: <span>до 4 часов.</span></p>
+                        <div class="cards__button">
+                           <a href="shopping.html" class="btn cards__btn">Подробнее</a>
+                        </div>
+                     </div>
+
+                     <div class="cards__item">
+                        <div class="cards__icon">
+                           <img src="img/services/magic-of-style.jpg" alt="">
+                        </div>
+                        <h4 class="cards__title">Индивидуальная программа годового сопровождения «Магия стиля»</h4>
+                        <ul class="cards__list">
+                           <li class="cards__list-item">
+                              Два больших шопинга оффлайн.
+                           </li>
+                           <li class="cards__list-item">
+                              Два разбора гардероба.
+                           </li>
+                           <li class="cards__list-item">
+                              Онлайн –сопровождение при шопинге во время поездок в течение года.
+                           </li>
+                           <li class="cards__list-item">
+                              Помощь в стилизации личных и семейных фотосессий.
+                           </li>
+                           <li class="cards__list-item">
+                              Бонус - 1 семейный шопинг.
+                           </li>
+                        </ul>
+                        <p class="cards__price" style="color: red">Стоимость: <span>220 BYN / 90 $</span></p>
+                        <p class="cards__duration">Продолжительность: <span>1 год.</span></p>
+                        <div class="cards__button">
+                           <a href="magic-of-style.html" class="btn cards__btn">Подробнее</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="education-section">
+            <div class="container">
+               <div class="education">
+                  <h2 class="education__title title">Мое образование</h2>
+                  <p class="education__text">Получила Европейское образование в Итальянской школе моды и стиля. Постоянно повышаю свои знания, продолжаю свое развитие и практику, прохожу различные курсы и мастер-классы.</p>
+                  <div class="education-content">
+                     <div class="education-content__column education-content__column--left">
+                        <h2 class="education-content__title">Образование</h2>
+                        <div class="education-item">
+                           <h3 class="education-item__title">Марафон «Твой успешный Fashion Instagram».</h3>
+                           <h4 class="education-item__subtitle">Онлайн-школа стиля и моды Карины Нигай.</h4>
+                           <p class="education-item__date">Апрель 2021</p>
+                        </div>
+                        <div class="education-item">
+                           <h3 class="education-item__title">Курс «Я Fashion-блогер».</h3>
+                           <h4 class="education-item__subtitle">Онлайн-школа стиля и моды Карины Нигай.</h4>
+                           <p class="education-item__date">Сентябрь-Октябрь 2020</p>
+                        </div>
+                        <div class="education-item">
+                           <h3 class="education-item__title">Курс «Развитие бизнеа стилиста».</h3>
+                           <h4 class="education-item__subtitle">Бизнес-школа стилистов Вероники Карпенко.</h4>
+                           <p class="education-item__date">Февраль 2020</p>
+                        </div>
+                        <div class="education-item">
+                           <h3 class="education-item__title">Обучение по специальности «Имидж-консультант. Fashion-стилист».</h3>
+                           <h4 class="education-item__subtitle">Итальянская школа моды и стиля, Милан, Италия.</h4>
+                           <p class="education-item__date">2018 - 2019</p>
+                        </div>
+                        <div class="education-item">
+                           <h3 class="education-item__title">Курс «Имидж-стилист, PR-специалист».</h3>
+                           <h4 class="education-item__subtitle">Бизнес-академия для женщин.</h4>
+                           <p class="education-item__date">Апрель 2018</p>
+                        </div>
+                        <div class="education-item">
+                           <h3 class="education-item__title">Курс «Сам себе визажист». Базовый уровень.</h3>
+                           <h4 class="education-item__subtitle">Автор: Олеся Тарасенко.</h4>
+                           <p class="education-item__date">Апрель 2018</p>
+                        </div>
+                        <div class="education-item">
+                           <h3 class="education-item__title">Курс «Стиль и имидж». Базовый уровень.</h3>
+                           <h4 class="education-item__subtitle">Автор: Олеся Тарасенко.</h4>
+                           <p class="education-item__date">Ноябрь 2017</p>
+                        </div>
+                     </div>
+                     <div class="education-content__column education-content__column--right">
+                        <h2 class="education-content__title">Опыт работы</h2>
+                        <div class="education-item">
+                           <h3 class="education-item__title">Cтилист.</h3>
+                           <h4 class="education-item__subtitle">Гомель, Беларусь.</h4>
+                           <p class="education-item__date">Октябрь 2021</p>
+                           <p class="education-item__text">Стилизация съемки для кондитерской фабрики «Спартак».</p>
+                        </div>
+
+                        <div class="education-item">
+                           <h3 class="education-item__title">Преподаватель.</h3>
+                           <h4 class="education-item__subtitle">Академия Женственности для девушек 12-17 лет. Гомель, Беларусь.</h4>
+                           <p class="education-item__date">Февраль - май 2021</p>
+                           <p class="education-item__text">Ведение лекций и мастер-классов по стилю и трендам для девушек.</p>
+                        </div>
+
+                        <div class="education-item">
+                           <h3 class="education-item__title">Публикация в Vogue Italia.</h3>
+                           <h4 class="education-item__subtitle">Милан, Италия.</h4>
+                           <p class="education-item__date">Сентябрь 2020</p>
+                           <p class="education-item__text">Моя креативная работа как модели и публикация в Vogue Italia.</p>
+                        </div>
+                        
+                        <div class="education-item">
+                           <h3 class="education-item__title">Fashion-стилист.</h3>
+                           <h4 class="education-item__subtitle">Гомель, Беларусь.</h4>
+                           <p class="education-item__date">2019 - 2020</p>
+                           <p class="education-item__text">Стилизация fashion-съемок для различных брендов и магазинов и публикации моих работ и fashion-съемок в интернет-журналах, таких, как Mob, IMIRAGEmagazine, Aperture Collective Magazine.</p>
+                        </div>
+
+                        <div class="education-item">
+                           <h3 class="education-item__title">Стилист-имиджмейкер.</h3>
+                           <h4 class="education-item__subtitle">Гомель, Беларусь.</h4>
+                           <p class="education-item__date">2018 - настоящее время</p>
+                           <p class="education-item__text">Личная работа с клиентами. Обновила стиль более, чем 50 клиентам.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="portfolio-section" id="portfolio">
+            <div class="container">
+               <div class="portfolio">
+                  <h2 class="education__title title">Мое портфолио</h2>
+                  <p class="education__text">Остальные свои работы я могу показать Вам при нашем знакомстве и подборе стиля.</p>
+                  <div class="gallery">
+                     <div class="gallery__item">
+                        <img src="img/gallery/image3.webp" alt="">
+                     </div>
+                     <div class="gallery__item">
+                        <img src="img/gallery/image2.webp" alt="">
+                     </div>
+                     <div class="gallery__item">
+                        <img src="img/gallery/5.jpg" alt="">
+                     </div>
+                     <div class="gallery__item">
+                        <img src="img/gallery/3.jpg" alt="">
+                     </div>
+                     <div class="gallery__item">
+                        <img src="img/gallery/IMG_1067.jpg" alt="">
+                     </div>
+                     <div class="gallery__item">
+                        <img src="img/gallery/1.jpg" alt="">
+                     </div>
+                     <div class="gallery__item">
+                        <img src="img/gallery/4.jpg" alt="">
+                     </div>
+                     <div class="gallery__item">
+                        <img src="img/gallery/6.jpg" alt="">
+                     </div>
+                     <div class="gallery__item">
+                        <img src="img/gallery/image7.png" alt="">
+                     </div>
+                     <div class="gallery__item">
+                        <img src="img/gallery/image4.webp" alt="">
+                     </div>
+                     <div class="gallery__item">
+                        <img src="img/gallery/image1.webp" alt="">
+                     </div>
+                     <div class="gallery__item">
+                        <img src="img/gallery/2.jpg" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="contacts-section" id="contacts">
+            <div class="contacts container">
+               <h2 class="contacts__title title">Контакты</h2>
+               <div class="contacts__content">
+                  <div class="contacts__item contacts__item--phone">
+                     <span class="contacts__item-icon">
+                        <img src="img/contacts/phone.svg" alt="">
+                     </span>
+                     <a href="tel:+375333155708" type="tel">+375(33)315 57 08</a>
+                  </div>
+                  <div class="contacts__item contacts__item--email">
+                     <span class="contacts__item-icon">
+                        <img src="img/contacts/envelope.svg" alt="">
+                     </span>
+                     <a href="email:zharikovay@bk.ru" type="tel">zharikovay@bk.ru</a>
+                  </div>
+               </div>
+               
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer-inner container">
+            <div class="copyright">
+               &#169 Ю.А.Жарикова, 2021
+            </div>
+            <div class="footer__social">
+               <div class="footer__social-item footer__social-item--facebook">
+                  <a href="https://www.facebook.com/people/%D0%AE%D0%BB%D0%B8%D1%8F-%D0%96%D0%B0%D1%80%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0/100005749932021/">
+                     <svg class="footer__social-icon">
+                        <use xlink:href="#facebook"></use>
+                     </svg>
+                  </a>
+               </div>
+               <div class="footer__social-item footer__social-item--vk">
+                  <a href="https://vk.com/id242389222">
+                     <svg class="footer__social-icon">
+                        <use xlink:href="#vk"></use>
+                     </svg>
+                  </a>
+               </div>
+               <div class="footer__social-item footer__social-item--instagram">
+                  <a href="https://www.instagram.com/juliazharykova/">
+                     <svg class="footer__social-icon">
+                        <use xlink:href="#instagram"></use>
+                     </svg>
+                  </a>
+               </div>
+               <div class="footer__social-item footer__social-item--telegram">
+                  <a href="https://t.me/julia_styling">
+                     <svg class="footer__social-icon">
+                        <use xlink:href="#telegram"></use>
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+
+
+
+      <script src="js/typewrite.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+
+   </html>

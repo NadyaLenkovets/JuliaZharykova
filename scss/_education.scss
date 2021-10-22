@@ -1,0 +1,74 @@
+.education-section {
+   background-color: rgba(255, 142, 201, 0.1);
+   padding: 100px 0px;
+}
+.education {
+}
+.education__title {
+}
+.education__text {
+   text-align: center;
+   max-width: 640px;
+   margin: 0px auto 50px;
+}
+.education-content {
+   display: flex;
+}
+.education-content__column {
+   &--left {
+      flex: 0 0 50%;
+      padding: 0px 30px 0px 0px;
+      
+   }
+   &--right {
+      flex: 0 0 50%;
+   }
+}
+.education-content__title {
+   padding: 0px 0px 0px 50px;
+   margin: 0px 0px 40px 0px;
+   font-size: 32px;
+   line-height: 1.2;
+   font-weight: 800;
+   color: #0f0a0a;
+}
+.education-item {
+   padding: 0px 0px 0px 50px;
+   position: relative;
+   margin: 0px 0px 30px 0px;
+   &::after {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: url(../img/education/mark.svg) no-repeat;
+      background-position: top center;
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+   }
+}
+.education-item__title {
+   margin: 0px 0px 6px 0px;
+   font-size: 22px;
+   line-height: 1.2;
+   font-weight: 800;
+   color: #0f0a0a;
+}
+.education-item__subtitle {
+   margin: 0px 0px 2px 0px;
+   font-size: 18px;
+   line-height: 1.2;
+   font-weight: 600;
+   color: #0f0a0a;
+}
+.education-item__date {
+   margin: 0px 0px 6px 0px;
+   text-transform: uppercase;
+   color: var(--text);
+   letter-spacing: 2px;
+}
+.education-item__text {
+   line-height: 2;
+}

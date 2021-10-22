@@ -1,0 +1,80 @@
+@import "_nullstyle";
+@import "_button-up";
+@import "_header";
+@import "_intro";
+@import "_about";
+@import "_services";
+@import "_parsing";
+@import "_magic";
+@import "_education";
+@import "_portfolio";
+@import "_contacts";
+@import "_footer";
+
+:root {
+   --text: #5e6472;
+   --accent: #dc965a;
+   --accent: rgba(155, 80, 188, 1);
+   --white: #fefefe;
+   --purple: rgba(234, 142, 201, 1);
+   --violet: rgba(155, 21, 188, 1);
+   --black: #111026;
+}
+html {
+   scroll-behavior: smooth;
+}
+body {
+   font-family: 'Nunito', sans-serif;
+   font-size: 15px;
+   line-height: 1.6;
+   background-color: #F5F5FB;
+   color: var(--text);
+   
+   &.lock {
+      overflow-y: hidden;
+   }
+   &.touch {
+      .header-nav__sublist {
+         &.open {
+            display: block;
+         }
+      }
+   }
+   &.mouse {
+      .header-nav__item {
+         &:hover {
+            .header-nav__sublist {
+               display: block;
+            }
+         }
+      }
+   }
+}
+.wrapper {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.main {
+   flex: 1 0 auto;
+}
+.container {
+   max-width: 1440px;
+   padding: 0px 20px;
+   margin: 0 auto;
+}
+.title {
+   font-size: 45px;
+   line-height: 1.2;
+   font-weight: 800;
+   color: #0f0a0a;
+   text-align: center;
+   &::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: rgba(234, 142, 201, 1);
+      margin: 30px auto 30px;
+   }
+}
