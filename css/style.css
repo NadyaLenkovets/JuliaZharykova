@@ -129,14 +129,14 @@ h6 {
   justify-content: space-between;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1500px) {
   .header__inner {
     justify-content: flex-end;
     height: 100%;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1500px) {
   .header__logo {
     position: absolute;
     top: 0;
@@ -1512,13 +1512,15 @@ h6 {
 @media (max-width: 767px) {
   .contacts__content {
     grid-template-columns: 1fr;
-    justify-items: center;
+    justify-items: left;
   }
 }
 
 .contacts__item {
   display: flex;
   align-items: center;
+  width: 290px;
+  margin: 0 auto;
 }
 
 .contacts__item span {
