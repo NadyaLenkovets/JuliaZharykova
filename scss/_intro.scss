@@ -43,11 +43,20 @@
    line-height: 1.2;
    color: #fff;
    font-weight: 700;
+   white-space: nowrap;
+   @media (max-width: 1199px) {
+      font-size: 76px;
+   }
+   @media (max-width: 991px) {
+      font-size: 70px;
+   }
    @media (max-width: 767px) {
-      font-size: 60px;
+      font-size: 54px;
    }
    @media (max-width: 565px) {
       font-size: 45px;
+      white-space: normal;
+      line-height: 1;
    }
 }
 .intro__stylist {

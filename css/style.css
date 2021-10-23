@@ -216,10 +216,11 @@ h6 {
 
 @media (max-width: 991px) {
   .header-nav__item {
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 30px 50px;
+    width: 100%;
   }
   .header-nav__item:last-of-type {
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 30px 50px;
   }
 }
 
@@ -333,6 +334,15 @@ h6 {
   display: block;
 }
 
+@media (max-width: 991px) {
+  .header-nav__sublist.open {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+  }
+}
+
 .header-nav__subitem {
   margin: 0px 0px 15px 0px;
 }
@@ -401,17 +411,32 @@ h6 {
   line-height: 1.2;
   color: #fff;
   font-weight: 700;
+  white-space: nowrap;
+}
+
+@media (max-width: 1199px) {
+  .intro__title {
+    font-size: 76px;
+  }
+}
+
+@media (max-width: 991px) {
+  .intro__title {
+    font-size: 70px;
+  }
 }
 
 @media (max-width: 767px) {
   .intro__title {
-    font-size: 60px;
+    font-size: 54px;
   }
 }
 
 @media (max-width: 565px) {
   .intro__title {
     font-size: 45px;
+    white-space: normal;
+    line-height: 1;
   }
 }
 
