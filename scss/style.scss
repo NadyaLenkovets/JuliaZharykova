@@ -62,6 +62,9 @@ body {
    max-width: 1440px;
    padding: 0px 20px;
    margin: 0 auto;
+   @media (max-width: 565px) {
+      padding: 0px 10px;
+   }
 }
 .title {
    font-size: 45px;
@@ -69,6 +72,9 @@ body {
    font-weight: 800;
    color: #0f0a0a;
    text-align: center;
+   @media (max-width: 565px) {
+      font-size: 35px;
+   }
    &::after {
       content: '';
       display: block;

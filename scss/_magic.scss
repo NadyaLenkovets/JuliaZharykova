@@ -2,7 +2,7 @@
    height: 100vh;
    width: 100%;
    background: url(../img/magic/bg.jpg) no-repeat;
-   background-position: 0% 35%;
+   background-position: center 35%;
    background-size: cover;
    position: relative;
    &::before {
@@ -10,7 +10,7 @@
       display: block;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.5);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.5) 100%);
       position: absolute;
       top: 0;
       left: 0;
@@ -33,7 +33,16 @@
    line-height: 1.2;
    color: #fff;
    font-weight: 700;
-   font-size: 45px;
+   white-space: nowrap;
+   @media (max-width: 991px) {
+      font-size: 70px;
+   }
+   @media (max-width: 767px) {
+      font-size: 60px;
+   }
+   @media (max-width: 565px) {
+      font-size: 42px;
+   }
 }
 .magic__subtitle {
    max-width: 670px;
@@ -42,12 +51,21 @@
    line-height: 1.2;
    color: #fff;
    font-weight: 500;
+   @media (max-width: 991px) {
+      font-size: 22px;
+   }
+   @media (max-width: 565px) {
+      font-size: 18px;
+   }
 }
 .magic__author {
    text-align: right;
    font-size: 18px;
    line-height: 1.2;
    color: #fff;
+   @media (max-width: 565px) {
+      font-size: 16px;
+   }
 }
 .m-title {
    font-size: 45px;
@@ -90,18 +108,36 @@
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-gap: 80px;
+   @media (max-width: 1199px) {
+      grid-gap: 40px;
+   }
+   @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+      padding: 90px 0px;
+   }
+   @media (max-width: 565px) {
+      padding: 70px 0px;
+   }
 }
-.magic3 {
-   padding: 120px 0px 120px 0px;
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-gap: 80px;
+.magic3-column--left,
+.magic5-column--left{
+   @media (max-width: 991px) {
+      grid-row: 2 / 3;
+   }
+}
+.magic3-column--right,
+.magic5-column--right {
+   @media (max-width: 991px) {
+      grid-row: 1 / 2;
+   }
 }
 .magic2__image,
 .magic3__image,
 .magic5__image {
+   border: 10px solid #fff;
+   box-shadow:  0px 25px 50px -12px rgba(0, 0, 0, 0.25);
    position: relative;
-   padding: 0px 0px 120% 0px;
+   padding: 0px 0px 100% 0px;
    img {
       width: 100%;
       height: 100%;
@@ -112,6 +148,8 @@
    }
 }
 .magic4__image {
+   border: 10px solid #fff;
+   box-shadow:  0px 25px 50px -12px rgba(0, 0, 0, 0.25);
    position: relative;
    padding: 0px 0px 95% 0px;
    img {
@@ -161,22 +199,44 @@
    }
 }
 .decor {
-   margin: 100px 0px 0px 0px;
+   margin: 120px 0px 0px 0px;
    width: 100%;
    height: 600px;
    background: url(../img/magic/decor.jpg) no-repeat;
    background-position: 0% 3%;
    background-size: cover;
+   @media (max-width: 991px) {
+      margin: 90px 0px 0px;
+   }
+   @media (max-width: 565px) {
+      margin: 70px 0px 0px;
+   }
 }
 .magic7-section {
    padding: 120px 0px 120px 0px;
+   @media (max-width: 991px) {
+      padding: 90px 0px;
+   }
+   @media (max-width: 565px) {
+      padding: 70px 0px;
+   }
 }
 .magic__price {
    margin: 40px 0px 1px 0px;
    font-size: 22px;
    font-weight: 700;
    color: #0f0a0a;
+   @media (max-width: 565px) {
+      font-size: 20px;
+   }
    span {
       color: var(--accent);
    }
+}
+.magic2__payment {
+   margin: 15px 0px 40px 0px;
+   font-size: 22px;
+   font-weight: 700;
+   color:rgba(234, 142, 201, 1);
+   text-transform: uppercase;
 }

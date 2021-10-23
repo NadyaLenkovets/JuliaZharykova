@@ -1,5 +1,11 @@
 .portfolio-section {
    padding: 100px 0px;
+   @media (max-width: 991px) {
+      padding: 90px 0px;
+   }
+   @media (max-width: 565px) {
+      padding: 70px 0px;
+   }
 }
 .portfolio {
 }
@@ -8,12 +14,25 @@
 
 .portfolio__text {
    margin: 0px 0px 50px 0px;
+   @media (max-width: 565px) {
+      padding: 0px 10px;
+   }
 }
 .gallery {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    grid-template-rows: repeat(3, 1fr);
    grid-gap: 5px;
+   @media (max-width: 991px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+   }
+   @media (max-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+   }
+   @media (max-width: 565px) {
+      grid-template-columns: repeat(1, 1fr);
+   }
 }
 .gallery__item {
    position: relative;

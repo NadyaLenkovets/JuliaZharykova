@@ -1,5 +1,11 @@
 .services-section {
-   padding: 100px 0px 100px 0px;
+   padding: 120px 0px 120px 0px;
+   @media (max-width: 991px) {
+      padding: 90px 0px;
+   }
+   @media (max-width: 565px) {
+      padding: 70px 0px;
+   }
 }
 .services {
 }
@@ -9,11 +15,18 @@
    text-align: center;
    max-width: 640px;
    margin: 0px auto 50px;
+   @media (max-width: 565px) {
+      padding: 0px 10px;
+   }
 }
 .services__cards {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-gap: 30px;
+   @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+   }
 }
 .cards {
 }
@@ -24,6 +37,9 @@
    display: flex;
    flex-direction: column;
    transition: 0.7s ease;
+   @media (max-width: 565px) {
+      padding: 20px 10px;
+   }
    &:hover {
       transform: scale(1.05);
    }

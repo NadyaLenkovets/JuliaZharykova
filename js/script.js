@@ -1,57 +1,38 @@
-// // ============  бургер-меню  ============ 
+// ============  бургер-меню  ============ 
 
-// const burger = document.querySelector('.burger');
-// const nav = document.querySelector('.sidebar');
-// const navLinks = document.querySelectorAll('.nav__link');
+const burger = document.querySelector('.header-burger');
+const nav = document.querySelector('.header-nav');
+const navLinks = document.querySelectorAll('.header-nav__link');
 
-// burger.addEventListener('click', function(e) {
-//    document.body.classList.toggle('lock');
-//    nav.classList.toggle('active');
-//    burger.classList.toggle('active');
-// })
+burger.addEventListener('click', function(e) {
+   document.body.classList.toggle('lock');
+   nav.classList.toggle('active');
+   burger.classList.toggle('active');
+})
 
-// navLinks.forEach(navLink => {
-//    navLink.addEventListener('click', onNavLinkClick);
-//    navLink.addEventListener('click', makeLinkActive);
-// })
+navLinks.forEach(navLink => {
+   navLink.addEventListener('click', onNavLinkClick);
+   navLink.addEventListener('click', makeLinkActive);
+})
 
-// function onNavLinkClick(e) {
-//    const navLink = e.target;
-//    if (burger.classList.contains('active')) {
-//       document.body.classList.remove('lock');
-//       nav.classList.remove('active');
-//       burger.classList.remove('active');
-//    }
-// }
+function onNavLinkClick(e) {
+   const navLink = e.target;
+   if (burger.classList.contains('active')) {
+      document.body.classList.remove('lock');
+      nav.classList.remove('active');
+      burger.classList.remove('active');
+   }
+}
 
-// function makeLinkActive() {
-//    navLinks.forEach(navLink => {
-//       navLink.parentElement.classList.remove('active');
-//       this.parentElement.classList.add('active');
-//    })
-// }
-
-
-
-// ============  fixed header  ============ 
-
-// window.onscroll = function() {scrollFunction()}
-
-// function scrollFunction() {
-
-//    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-//       // document.getElementById('header').style.backgroundColor = "rgba(255, 255, 255, 0.8)";
-//       document.getElementById('header').classList.add('active');
-//    } else {
-//       // document.getElementById('header').style.backgroundColor = "transparent";
-//       document.getElementById('header').classList.remove('active');
-//    }
-// }
+function makeLinkActive() {
+   navLinks.forEach(navLink => {
+      navLink.parentElement.classList.remove('active');
+      this.parentElement.classList.add('active');
+   })
+}
 
 
-
-
-// ============  подменю  ============ 
+// ============  submenu  ============ 
 
 const body = document.querySelector('body');
 
