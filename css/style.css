@@ -302,6 +302,7 @@ h6 {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  transition: 0.4s ease;
 }
 
 .menu-arrow img {
@@ -1687,6 +1688,10 @@ body.lock {
 
 body.touch .header-nav__sublist.open {
   display: block;
+}
+
+body.touch .menu-arrow.active {
+  transform: rotate(180deg);
 }
 
 body.mouse .header-nav__item:hover .header-nav__sublist {

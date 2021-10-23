@@ -39,6 +39,11 @@ body {
             display: block;
          }
       }
+      .menu-arrow {
+         &.active {
+            transform: rotate(180deg);
+         }
+      }
    }
    &.mouse {
       .header-nav__item {
