@@ -159,11 +159,20 @@
    justify-content: center;
    align-items: center;
    transition: 0.4s ease;
+   vertical-align: text-bottom;
+   @media (max-width: 991px) {
+      width: 25px;
+      height: 25px;
+   }
    img {
       margin: 2px 0px 0px 0px;
       transition: 0.4s ease;
       width: 14px;
       height: 14px;
+      @media (max-width: 991px) {
+         width: 25px;
+         height: 25px;
+      }
    }
    &:hover {
       img {

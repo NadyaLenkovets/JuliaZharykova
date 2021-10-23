@@ -303,6 +303,14 @@ h6 {
   justify-content: center;
   align-items: center;
   transition: 0.4s ease;
+  vertical-align: text-bottom;
+}
+
+@media (max-width: 991px) {
+  .menu-arrow {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .menu-arrow img {
@@ -310,6 +318,13 @@ h6 {
   transition: 0.4s ease;
   width: 14px;
   height: 14px;
+}
+
+@media (max-width: 991px) {
+  .menu-arrow img {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .menu-arrow:hover img {
