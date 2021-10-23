@@ -165,6 +165,7 @@ h6 {
     opacity: 0;
     visibility: hidden;
     z-index: 2;
+    overflow: auto;
   }
   .header-nav.active {
     transform: translateY(0);
@@ -306,6 +307,8 @@ h6 {
 .menu-arrow img {
   margin: 2px 0px 0px 0px;
   transition: 0.4s ease;
+  width: 14px;
+  height: 14px;
 }
 
 .menu-arrow:hover img {
