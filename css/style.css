@@ -195,7 +195,7 @@ h6 {
   .header-nav {
     position: fixed;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     top: 0;
     left: 0;
     right: 0;
