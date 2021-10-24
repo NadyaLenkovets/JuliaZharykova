@@ -1,6 +1,9 @@
 .parsing-section {
    margin: 80px 0px 0px 0px;
    padding: 50px 0px 100px;
+   
+}
+.parsing {
    // анимируемый элемент
    transform: translateY(10%);
    transition: transform 1.5s ease;
@@ -35,7 +38,6 @@
    margin: 0px 0px 20px 0px;
 }
 .parsing__list-item {
-   // max-width: 900px;
    &:not(:last-of-type) {
       margin: 0px 0px 10px 0px;
    }
