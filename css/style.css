@@ -661,7 +661,7 @@ h6 {
   z-index: 1;
   display: flex;
   align-items: center;
-  transform: translateY(20%);
+  transform: translateY(10%);
   transition: transform 1.0s ease;
 }
 
@@ -877,6 +877,12 @@ h6 {
 
 .cards__item.anim-active {
   opacity: 1;
+}
+
+@media (max-width: 991px) {
+  .cards__item {
+    padding: 30px 20px 20px;
+  }
 }
 
 @media (max-width: 565px) {
@@ -1418,7 +1424,7 @@ h6 {
 }
 
 .education {
-  transform: translateY(20%);
+  transform: translateY(10%);
   transition: transform 1.5s ease;
 }
 
@@ -1807,7 +1813,6 @@ h6 {
 
 :root {
   --text: #5e6472;
-  --accent: #dc965a;
   --accent: rgba(155, 80, 188, 1);
   --white: #fefefe;
   --purple: rgba(234, 142, 201, 1);
