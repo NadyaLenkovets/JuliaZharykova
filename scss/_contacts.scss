@@ -10,6 +10,14 @@
 .contacts__title {
    margin: 0px 0px 60px 0px;
 }
+.contacts__text {
+   text-align: center;
+   max-width: 640px;
+   margin: 0px auto 50px;
+   @media (max-width: 565px) {
+      padding: 0px 10px;
+   }
+}
 .contacts__content {
    display: grid;
    grid-template-columns: repeat(2, fit-content(350px));

@@ -9,6 +9,12 @@
    }
 }
 .education {
+   // анимируемый элемент
+   transform: translateY(20%);
+   transition: transform 1.5s ease;
+   &.anim-active {
+      transform: translateY(0%);
+   }
 }
 .education__title {
 }

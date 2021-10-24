@@ -47,13 +47,21 @@
       </svg>
 
       
+      <!-- loader -->
+      
+      <div class="mask" id="mask">
+         <div class="loader">
+            
+         </div>
+      </div>
+      
       <!-- button-up -->
 
       <div class="button-up" id="button-up">
          <img src="img/header/up-chevron.svg" height="20px" alt="">
       </div>
 
-      <header class="header" id="header">
+      <header class="header anim-items anim-no-hide" id="header">
          <div class="header__inner container">
             <div class="header__logo">
                <a href="index.html"><img src="img/header/logo.svg" alt="logo"></a>
@@ -100,7 +108,7 @@
          </div>
       </header>
       <main class="main">
-         <section class="parsing-section">
+         <section class="parsing-section  anim-items anim-no-hide">
             <div class="container">
                <div class="parsing">
                   <h2 class="parsing__title">Разбор гардероба</h2>
@@ -126,8 +134,12 @@
                      </li>
                   </ul>
                   <p class="parsing__text">В процессе разбора мы формируем шопинг –лист. Вы можете делать покупки самостоятельно, либо с моей помощью.</p>
-                  <p class="parsing__price">Стоимость услуги:<span> 220рублей (90 долларов в эквиваленте)</span>.</p>
+                  <!-- <p class="parsing__price">Стоимость услуги:<span> 220рублей (90 долларов в эквиваленте)</span>.</p> -->
                   <p class="parsing__duration">Продолжительность:<span> 4 часа</span>.</p>
+                  <p class="parsing__text parsing__text--mm">Для записи на бесплатную консультацию свяжитесь со мной.</p>
+                  <div class="parsing__button">
+                     <a href="index.html#contacts" class="btn parsing__btn">Связаться со мной</a>
+                  </div>
                   <div class="parsing__gallery">
                      <div class="parsing__gallery-item">
                         <img src="img/parsing/parsing.jpg" alt="">

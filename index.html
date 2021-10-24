@@ -15,6 +15,10 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
 
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
 
       <link rel="stylesheet" href="css/style.css">
    </head>
@@ -49,6 +53,14 @@
 
    <div class="wrapper">
 
+      <!-- loader -->
+
+      <div class="mask" id="mask">
+         <div class="loader">
+            
+         </div>
+      </div>
+
       <!-- button-up -->
 
       <div class="button-up" id="button-up">
@@ -57,7 +69,7 @@
 
       <!-- header -->
 
-      <header class="header" id="header">
+      <header class="header anim-items anim-no-hide" id="header">
          <div class="header__inner container">
             <div class="header__logo">
                <a href="index.html"><img src="img/header/logo.svg" alt="logo"></a>
@@ -107,7 +119,7 @@
       <!-- main -->
 
       <main class="main">
-         <section class="intro-section" id="intro">
+         <section class="intro-section anim-items anim-no-hide" id="intro">
             <div class="intro">
                <div class="intro-content">
                   <h3 class="intro__subtitle">Здравствуйте!</h3>
@@ -149,7 +161,7 @@
          </section>
          <section class="about-section" id="about">
             <div class="container">
-               <div class="about ">
+               <div class="about anim-items anim-no-hide">
                   <div class="about__column about__column--1">
                      <div class="about__image">
                         <img src="img/about/image.jpg" alt="">
@@ -160,13 +172,14 @@
                         <h2 class="about__title">Обо мне</h2>
                         <h3 class="about__subtitle">Стилист. Модель. Fashion & Personal styling.</h3>
                         <p class="about__text">Я практикующий fashion-стилист с европейским образованием, единственный в городе. Использую креативный подход и психологический портрет клиента для создания его уникального стиля.</p>
+                        <p class="about__text">Нахожусь в городе Гомель, Беларусь. Работаю online с русскоязычными клиентами по всему миру.</p>
                         <p class="about__text">Очень люблю моду и рада быть полезной, чтобы помочь Вам найти свое понимание себя с помощью одежды.</p>
                         <p class="about__text">Участвовала во многих проектах по преображению женщин в нашем городе, а также в одном из проектов в Итальянской школе. Автор статей в журнал от Итальянской школы (онлайн-версия).</p>
                         <p class="about__text">Посещаю различные культурные мероприятия в модной среде: показы мод, мастер-классы у популярных блогеров, связанных с модой, провела несколько fashion-съемок.</p>
                         <p class="about__text">Разбираюсь в люксовых марках и миксую с более доступными.</p>
                         <p class="about__text about__text--accent">Осознанное потребление, эстетика, гармония с собой и окружающим миром - мое кредо в работе!</p>
                         <div class="about__button">
-                           <a href="index.html#contacts" class="btn btn--about">Связаться</a>
+                           <a href="index.html#contacts" class="btn btn--about">Связаться со мной</a>
                         </div>
                      </div>
                   </div>
@@ -179,7 +192,7 @@
                   <h2 class="services__title title">Мои услуги</h2>
                   <p class="services__text">Я тактичный и внимательный человек. Очень хорошо понимаю, что все люди разные, у всех разные жизненные ценности и задачи, разный уровень материального достатка и свое уникальное видение прекрасного. Поэтому я никогда не спорю и не навязываю свою точку зрения. Если предложенные мною варианты Вам не понравятся, мы найдем другие. Я свободна от дутых амбиций "великого стилиста" и высокомерия по отношению к людям вообще и своим клиентам в частности. Со мною комфортно.</p>
                   <div class="services__cards cards">
-                     <div class="cards__item">
+                     <div class="cards__item anim-items anim-no-hide">
                         <div class="cards__icon">
                            <img src="img/services/parsing.jpg" alt="">
                         </div>
@@ -195,13 +208,16 @@
                               Шоп-лист вещей, которые рекомендовано докупить.
                            </li>
                         </ul>
-                        <p class="cards__price">Стоимость: <span>220 BYN / 90 $</span></p>
+                        <!-- <p class="cards__price">Стоимость: <span>220 BYN / 90 $</span></p> -->
                         <p class="cards__duration">Продолжительность: <span>4 часа.</span></p>
                         <div class="cards__button">
                            <a href="parsing.html" class="btn cards__btn">Подробнее</a>
                         </div>
+                        <div class="cards__button">
+                           <a href="index.html#contacts" class="btn cards__btn">Связаться со мной</a>
+                        </div>
                      </div>
-                     <div class="cards__item">
+                     <div class="cards__item anim-items anim-no-hide">
                         <div class="cards__icon">
                            <img src="img/services/photosession.jpg" alt="">
                         </div>
@@ -217,13 +233,16 @@
                               Ссылки на магазины, интересные детали.
                            </li>
                         </ul>
-                        <p class="cards__price">Стоимость: <span>50 BYN за образ / 20 $</span></p>
+                        <!-- <p class="cards__price">Стоимость: <span>50 BYN за образ / 20 $</span></p> -->
                         <p class="cards__duration">Продолжительность: <span>более 1 часа.</span></p>
                         <div class="cards__button">
                            <a href="photosession.html" class="btn cards__btn">Подробнее</a>
                         </div>
+                        <div class="cards__button">
+                           <a href="index.html#contacts" class="btn cards__btn">Связаться со мной</a>
+                        </div>
                      </div>
-                     <div class="cards__item">
+                     <div class="cards__item anim-items anim-no-hide">
                         <div class="cards__icon">
                            <img src="img/services/shopping.jpg" alt="">
                         </div>
@@ -242,14 +261,17 @@
                               Отдых, кофе-пауза и беседа.
                            </li>
                         </ul>
-                        <p class="cards__price">Стоимость: <span>220 BYN / 90 $</span></p>
+                        <!-- <p class="cards__price">Стоимость: <span>220 BYN / 90 $</span></p> -->
                         <p class="cards__duration">Продолжительность: <span>до 4 часов.</span></p>
                         <div class="cards__button">
                            <a href="shopping.html" class="btn cards__btn">Подробнее</a>
                         </div>
+                        <div class="cards__button">
+                           <a href="index.html#contacts" class="btn cards__btn">Связаться со мной</a>
+                        </div>
                      </div>
 
-                     <div class="cards__item">
+                     <div class="cards__item anim-items anim-no-hide">
                         <div class="cards__icon">
                            <img src="img/services/magic-of-style.jpg" alt="">
                         </div>
@@ -271,10 +293,13 @@
                               Бонус - 1 семейный шопинг.
                            </li>
                         </ul>
-                        <p class="cards__price">Стоимость: <span>850 BYN (350 $) / 1460 BYN (600 $) / 1900 BYN (800 $)</span></p>
+                        <!-- <p class="cards__price">Стоимость: <span>850 BYN (350 $) / 1460 BYN (600 $) / 1900 BYN (800 $)</span></p> -->
                         <p class="cards__duration">Продолжительность: <span>3 месяца / 6 месяцев / 1 год.</span></p>
                         <div class="cards__button">
                            <a href="magic-of-style.html" class="btn cards__btn">Подробнее</a>
+                        </div>
+                        <div class="cards__button">
+                           <a href="index.html#contacts" class="btn cards__btn">Связаться со мной</a>
                         </div>
                      </div>
                   </div>
@@ -283,7 +308,7 @@
          </section>
          <section class="education-section">
             <div class="container">
-               <div class="education">
+               <div class="education anim-items anim-no-hide">
                   <h2 class="education__title title">Мое образование</h2>
                   <p class="education__text">Получила Европейское образование в Итальянской школе моды и стиля. Постоянно повышаю свои знания, продолжаю свое развитие и практику, прохожу различные курсы и мастер-классы.</p>
                   <div class="education-content">
@@ -372,40 +397,40 @@
                   <h2 class="education__title title">Мое портфолио</h2>
                   <p class="education__text">Остальные свои работы я могу показать Вам при нашем знакомстве и подборе стиля.</p>
                   <div class="gallery">
-                     <div class="gallery__item">
+                     <div class="gallery__item anim-items anim-no-hide">
                         <img src="img/gallery/image3.webp" alt="">
                      </div>
-                     <div class="gallery__item">
+                     <div class="gallery__item anim-items anim-no-hide">
                         <img src="img/gallery/image2.webp" alt="">
                      </div>
-                     <div class="gallery__item">
+                     <div class="gallery__item anim-items anim-no-hide">
                         <img src="img/gallery/5.jpg" alt="">
                      </div>
-                     <div class="gallery__item">
+                     <div class="gallery__item anim-items anim-no-hide">
                         <img src="img/gallery/3.jpg" alt="">
                      </div>
-                     <div class="gallery__item">
+                     <div class="gallery__item anim-items anim-no-hide">
                         <img src="img/gallery/IMG_1067.jpg" alt="">
                      </div>
-                     <div class="gallery__item">
+                     <div class="gallery__item anim-items anim-no-hide">
                         <img src="img/gallery/image7.jpg" alt="">
                      </div>
-                     <div class="gallery__item">
+                     <div class="gallery__item anim-items anim-no-hide">
                         <img src="img/gallery/4.jpg" alt="">
                      </div>
-                     <div class="gallery__item">
+                     <div class="gallery__item anim-items anim-no-hide">
                         <img src="img/gallery/6.jpg" alt="">
                      </div>
-                     <div class="gallery__item">
+                     <div class="gallery__item anim-items anim-no-hide">
                         <img src="img/gallery/image8.png" alt="">
                      </div>
-                     <div class="gallery__item">
+                     <div class="gallery__item anim-items anim-no-hide">
                         <img src="img/gallery/image4.webp" alt="">
                      </div>
-                     <div class="gallery__item">
+                     <div class="gallery__item anim-items anim-no-hide">
                         <img src="img/gallery/image1.webp" alt="">
                      </div>
-                     <div class="gallery__item">
+                     <div class="gallery__item anim-items anim-no-hide">
                         <img src="img/gallery/2.jpg" alt="">
                      </div>
                   </div>
@@ -415,6 +440,8 @@
          <section class="contacts-section" id="contacts">
             <div class="contacts container">
                <h2 class="contacts__title title">Контакты</h2>
+               <p class="contacts__text">Для записи на бесплатную консультацию или уточнения любых моментов, свяжитесь со мной любым удобным способом. <br>
+                   До скорой встречи!</p>
                <div class="contacts__content">
                   <div class="contacts__item contacts__item--phone">
                      <span class="contacts__item-icon">

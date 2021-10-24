@@ -38,6 +38,12 @@
    position: relative;
    padding: 0px 0px 135% 0px;
    overflow: hidden;
+   // анимируемый элемент
+   opacity: 0;
+   transition: opacity 1.2s ease;
+   &.anim-active {
+      opacity: 1;
+   }
    &:hover {
       img {
          transform: scale(1.1);

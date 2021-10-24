@@ -5,6 +5,12 @@
    background-position: center 35%;
    background-size: cover;
    position: relative;
+   // анимируемый элемент
+   transform: translateY(20%);
+   transition: transform 1.5s ease;
+   &.anim-active {
+      transform: translateY(0%);
+   }
    &::before {
       content: '';
       display: block;
@@ -17,8 +23,6 @@
       right: 0;
       bottom: 0;
    }
-}
-.magic1 {
 }
 .magic1__content {
    position: absolute;

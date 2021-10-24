@@ -1,6 +1,12 @@
 .parsing-section {
    margin: 80px 0px 0px 0px;
    padding: 50px 0px 100px;
+   // анимируемый элемент
+   transform: translateY(20%);
+   transition: transform 1.5s ease;
+   &.anim-active {
+      transform: translateY(0%);
+   }
 }
 .parsing {
 }
@@ -60,6 +66,9 @@
    span {
       color: var(--accent);
    }
+   &--mm {
+      margin: 30px 0px 0px 0px;
+   }
 }
 .parsing__gallery {
    margin: 60px 0px 0px 0px;
@@ -90,5 +99,10 @@
       left: 0;
       object-fit: cover;
       transition: 0.4s ease;
+   }
+}
+.parsing__btn {
+   @media (max-width: 565px) {
+      width: 100%;
    }
 }

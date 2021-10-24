@@ -5,6 +5,15 @@
    background: url(../img/intro/bg2.webp) no-repeat;
    background-position: 50% 20%;
    background-size: cover;
+   // for loader
+   opacity: 0;
+   transition: opacity 0.4s ease;
+    // анимируемый элемент
+    transform: translateY(20%);
+    transition: transform 1.5s ease;
+    &.anim-active {
+       transform: translateY(0%);
+    }
    &::before {
       content: '';
       display: block;
@@ -38,6 +47,7 @@
    }
 }
 .intro__title {
+   font-family: 'Open Sans', sans-serif;
    margin: 0px 0px 15px 0px;
    font-size: 90px;
    line-height: 1.2;
@@ -67,14 +77,16 @@
    position: relative;
    @media (max-width: 767px) {
       font-size: 30px;
+      
    }
    @media (max-width: 565px) {
       font-size: 26px;
+      max-width: 200px;
    }
    span {
       position: relative;
       @media (max-width: 1191px) {
-         // display: block;
+         display: inline-block;
       }
       &::before {
          content: '';

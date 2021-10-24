@@ -1,4 +1,5 @@
 @import "_nullstyle";
+@import "_loader";
 @import "_button-up";
 @import "_header";
 @import "_intro";
@@ -22,6 +23,12 @@
 }
 html {
    scroll-behavior: smooth;
+   &.preloader {
+      .header,
+      .intro-section {
+         opacity: 1;
+      }
+   }
 }
 body {
    font-family: 'Nunito', sans-serif;
