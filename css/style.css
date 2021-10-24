@@ -958,7 +958,7 @@ h6 {
 }
 
 .parsing {
-  transform: translateY(10%);
+  transform: translateY(5%);
   transition: transform 1.5s ease;
 }
 
@@ -1047,7 +1047,7 @@ h6 {
 
 @media (max-width: 991px) {
   .parsing__gallery {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, calc((100% - 10px) / 2));
   }
 }
 
