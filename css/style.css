@@ -1058,6 +1058,12 @@ h6 {
   position: relative;
   padding: 0px 0px 135% 0px;
   overflow: hidden;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.parsing__gallery-item.anim-active {
+  opacity: 1;
 }
 
 .parsing__gallery-item:hover img {
